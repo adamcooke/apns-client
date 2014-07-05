@@ -23,8 +23,8 @@ module APNS
     #
     # Register a device
     #
-    def register(device)
-      response = make_request(:register, {:device => device})
+    def register(device, label = nil)
+      response = make_request(:register, {:device => device, :label => label})
       response.success?
     end
     

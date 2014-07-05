@@ -36,6 +36,6 @@ response.success?               # => Has the notification been added successfull
 response.device_unsubscribed?   # => Has the device been unsubscribed?
 
 # Register a device
-response = client.register(device_identifier)
+response = client.register(device_identifier, "Adam's iPhone 5")
 response                        # => true or false 
 ```
